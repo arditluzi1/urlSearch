@@ -1,17 +1,14 @@
 # UrlSearchApplication
 
 ## Description
-
 UrlSearchApplication is a simple multithreaded web crawler built with Spring Boot and Java. 
 The application recursively visits pages on a specified website, collects all URLs found, and outputs a sorted list of URLs once the crawl is complete.
 
 Features:
 - **Recursive Crawling:** For each internal link found, the crawler "starts over" by fetching, parsing, and scheduling further crawl tasks.
 - **Multithreading:** Uses an ExecutorService with a fixed thread pool and an AtomicInteger to manage concurrent crawling tasks efficiently.
-- **Modular Design:** The code is split into several classes (CrawlerService, CrawlTask, HtmlFetcher, and HtmlParser) for clear separation of concerns.
 
 ## Prerequisites
-
 - Java 17 or higher
 - Gradle 3.8 or higher
 
